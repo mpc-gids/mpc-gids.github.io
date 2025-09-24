@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>DP-IM</title>
+  <title>MPC-GIDS</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
@@ -30,12 +30,15 @@
         <!--Start Project Summary-->
         <div class="flex-row">
 		  <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Collaborative Research: IMR: MM-1B: Foundations for Differentially Private Internet Measurement</h2>
+            <h2 class="add-top-margin">PDaSP Track 1: Practical Secure Multiparty Computations for Graph-based Intrusion Detection Systems</h2>
             <hr>
 			<h3>Summary</h3>
             <p class="text">
-			<img class="image image-wrap-text max-width-140" src="img/data-protection.jpg">
-Internet measurement research has been providing critical insights and evidence support in guiding the design of Internet infrastructures. However, how to share and use Internet measurement data while respecting users' privacy is still challenging. To protect privacy, most works choose to anonymize sensitive fields or only publish the aggregated statistics, but such methods are vulnerable to privacy attacks. Differential privacy, which provides guaranteed privacy protection for data release, has gained prominent traction from companies and government agencies, and is a natural choice for sharing Internet measurement data. However, a critical gap remains to identify how differential privacy can be applied to networking problems. This project aims to understand privacy issues and then lay the foundations for deploying differential privacy in the processing pipeline of Internet measurement data. The project's broader significance and importance include transferring the technologies to industry, involving members from under-represented groups, and disseminating outcomes through K-12 outreach and community services. </br>
+			<img class="image image-wrap-text max-width-140" src="img/mpc-gids.png">
+Cyberattacks on computer networks pose growing threats to critical infrastructure, businesses, and personal data across the United States. Computer security systems that monitor network traffic to detect suspicious activity are essential for protecting against these attacks, but they face a significant challenge: detecting sophisticated attacks often requires analyzing data from multiple organizations, devices, or locations simultaneously. However, sharing network data raises serious privacy concerns because this information can reveal sensitive details about individuals, businesses, and government operations. This project addresses this challenge by developing advanced privacy protection methods that allow organizations to work together to detect cyberattacks without exposing sensitive information. This work serves the national interest by strengthening cybersecurity defenses across critical infrastructure, supporting economic competitiveness through improved data protection, advancing national security through enhanced threat detection capabilities, and enabling compliance with privacy regulations while maintaining robust cyber defenses.  </br></br>
+
+This project develops privacy-preserving techniques for graph-based intrusion detection systems that model network traffic and device relationships as interconnected graphs. The research activities include developing specialized cryptographic protocols for essential operations such as sparse matrix multiplications that are fundamental to graph-based analysis. The project will utilize different data partitioning strategies and computational models to perform most operations locally on unencrypted data, minimizing the computational overhead of cryptographic protocols. The team will implement selective revelation of intermediate computational results under differential privacy protection to improve system efficiency while maintaining privacy guarantees. The research extends these protocols to protect the complete training process of graph convolutional neural networks used in intrusion detection, providing comprehensive privacy protection with enhanced computational efficiency. Additionally, the project will support privacy-preserving data provenance in graph-traversal-based detection systems by modeling graph traversal algorithms as matrix operations implemented through the specialized cryptographic protocols. The team will validate these approaches using real-world network datasets and evaluate their effectiveness in collaborative intrusion detection scenarios while measuring privacy preservation and computational performance across diverse network environments.
+ </br>
 
 
             </p>
@@ -49,7 +52,7 @@ Internet measurement research has been providing critical insights and evidence 
             <h2 class="add-top-margin">Support</h2>
             <hr>
 			<ul>
-              <li>NSF CNS-2220434. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2220433&HistoricalAwards=false"> uVa Part.</a><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2220434&HistoricalAwards=false"> UCI Part.</a></li>
+              <li>NSF 2453148 and 2453149. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2453148&HistoricalAwards=false"> UCI Part.</a><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2453149&HistoricalAwards=false"> UIUC Part.</a></li>
             </ul>
           </div>
         </div>
@@ -61,13 +64,10 @@ Internet measurement research has been providing critical insights and evidence 
             <h2 class="add-top-margin">People</h2>
             <hr>            
             <ul>
-			  <li>Tianhao Wang. PI on this project (uVa CS).</li>
               <li>Zhou Li. PI on this project (UCI EECS). </li>
+              <li>Yupeng Zhang. PI on this project (UIUC ECE).</li>
               <li>Yu Zheng. PostDoc Scholar (UCI EECS). </li>
-			  <li>Joann Qiongna Chen. Ph.D. Student Researcher (UCI EECS).</li>
-			  <li>Danyu Sun. Ph.D. Student Researcher (UCI EECS).</li>
                       <li>Chenang Li. Ph.D. Student Researcher (UCI EECS). </li>
-        			  <li>Chen Gong. Ph.D. Student Researcher (uVa CS).</li>
             </ul>
           </div>
         </div>
@@ -101,93 +101,9 @@ Internet measurement research has been providing critical insights and evidence 
           <div class="flex-item flex-column">
             <h2 class="add-top-margin">Publications</h2>
             <hr>
-            <li><strong><span style="color: #993300;">[NDSS'26]</span></strong> <span style="color: #000000;">
-              Jiacen Xu, Chenang Li, Yu Zheng and Zhou Li.
-              <a href="https://faculty.sites.uci.edu/zhouli/files/2025/09/ndss26.pdf">"Entente: Cross-silo Intrusion Detection on Network Log Graphs with Federated Learning." </a>
-              Accepted by Annual Network and Distributed System Security Symposium. 2026.</span>
-          </li> 
-          <li><strong><span style="color: #993300;">[Preprint]</span></strong> <span style="color: #000000;">
-              Zhou Li, Yu Zheng, Tianhao Wang and Sang-Woo Jun. 
-              <a href="https://arxiv.org/abs/2509.04710">"Network-Aware Differential Privacy." </a>
-              arXiv:2509.04710. 2025.</span>
-          </li> 
-          <li><strong><span style="color: #993300;">[USENIX Security'25]</span></strong> <span style="color: #000000;">
-              Zihang Xiang, Tianhao Wang and Di Wang. 
-              <a href="https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-727-xiang.pdf">"Privacy Audit as Bits Transmission: (Im)possibilities for Audit by One Run." </a>
-              In Proceedings of the USENIX Security Symposium. 2025.</span>
-          </li> 
-          <li><strong><span style="color: #993300;">[ICLR'25]</span></strong> <span style="color: #000000;">
-              Fengyu Gao, Ruida Zhou, Tianhao Wang, Cong Shen and Jing Yang. 
-              <a href="https://arxiv.org/pdf/2410.12085">"Data-adaptive Differentially Private Prompt Synthesis for In-Context Learning." </a>
-              In Proceedings of the International Conference on Learning Representations. 2025.</span>
-          </li> 
-            <li><strong><span style="color: #993300;">[PETS'25]</span></strong> <span style="color: #000000;">
-              Joann Qiongna Chen, Xinlei He, Zheng Li, Yang Zhang and Zhou Li. 
-              <a href="https://faculty.sites.uci.edu/zhouli/files/2024/12/pets25.pdf">"A Comprehensive Study of Privacy Risks in Curriculum Learning." </a>
-              In Proceedings of the Privacy Enhancing Technologies Symposium. 2025.</span>
-          </li>      
-          <li><strong><span style="color: #993300;">[CCS'24]</span></strong> <span style="color: #000000;">
-              Yucheng Fu and Tianhao Wang. 
-              <a href="https://dl.acm.org/doi/pdf/10.1145/3658644.3690257">"Benchmarking Secure Sampling Protocols for Differential Privacy" </a>
-              In Proceedings of the ACM SIGSAC Conference on Computer and Communications Security. 2024.</span>
-          </li>         
-            <li><strong><span style="color: #993300;">[IMC'24]</span></strong> <span style="color: #000000;">
-              Danyu Sun, Joann Qiongna Chen, Chen Gong, Tianhao Wang, and Zhou Li. 
-              <a href="https://faculty.sites.uci.edu/zhouli/files/2024/10/imc24a.pdf">"NetDPSyn: Synthesizing Network Traces under Differential Privacy." </a>
-              In Proceedings of the ACM Internet Measurement Conference. 2024.</span>
-          </li>            
-            <li><strong><span style="color: #993300;">[SP'24]</span></strong> <span style="color: #000000;">
-              Xiang, Zihang, Tianhao Wang, and Di Wang. 
-              <a href="https://arxiv.org/abs/2311.06888">"Preserving node-level privacy in graph neural networks." </a>
-              In Proceedings of IEEE Symposium on Security and Privacy. 2024.</span>
-          </li>                     
-            <li><strong><span style="color: #993300;">[Neurips'23]</span></strong> <span style="color: #000000;">
-              Josephine Lamp, Mark Derdzinski, Christopher Hannemann, Joost Van der Linden, Lu Feng, Tianhao Wang, and David Evans. 
-              <a href="https://arxiv.org/abs/2303.01621">"Glucosynth: Generating differentially-private synthetic glucose traces." </a>
-              In Proceedings of the Advances in Neural Information Processing Systems. 2023.</span>
-          </li>            
-            <li><strong><span style="color: #993300;">[ACSAC'23b]</span></strong> <span style="color: #000000;">
-              Mingtian Tan, Xiaofei Xie, Jun Sun, and Tianhao Wang. 
-              <a href="https://dl.acm.org/doi/abs/10.1145/3627106.3627189">"Mitigating Membership Inference Attacks via Weighted Smoothing." </a>
-              In Proceedings of the 2023 Annual Computer Security Applications Conference. 2023.</span>
-          </li>
-            <li><strong><span style="color: #993300;">[ACSAC'23a] </span></strong><span style="color: #000000;">
-              Joann Qiongna Chen, Tianhao Wang, Zhikun Zhang, Yang Zhang, Somesh Jha and Zhou Li.
-            <a href="https://faculty.sites.uci.edu/zhouli/files/2023/11/acsac23.pdf">"Differentially Private Resource Allocation."</a> 
-            The 39th Annual Computer Security Applications Conference, 2023.</span> </li>
-            <li><strong><span style="color: #993300;">[TPDP'23] </span></strong><span style="color: #000000;">
-              Joann Qiongna Chen, Tianhao Wang, Zhikun Zhang, Yang Zhang, Somesh Jha and Zhou Li.
-            "Differentially Private Resource Allocation."</a> 
-            Theory and Practice of Differential Privacy, 2023.​</span> </li>
-    
-          <li><strong><span style="color: #993300;">[USENIX Security'23]</span></strong> <span style="color: #000000;">
-              Haiming Wang, Zhikun Zhang, Tianhao Wang, Shibo He, Michael Backes, Jiming Chen, and Yang Zhang.
-               <a href="https://www.usenix.org/system/files/sec23summer_179-wang_haiming-prepub.pdf">
-              "PrivTrace: Differentially Private Trajectory Synthesis by Adaptive Markov Model." </a>
-              In USENIX Security Symposium 2023.</span>
-          </li>
-          <li><strong><span style="color: #993300;">[PACMMOD'23]</span></strong> <span style="color: #000000;">
-              Zihang Xiang, Tianhao Wang, Wanyu Lin, and Di Wang. <a href="https://dl.acm.org/doi/abs/10.1145/3589264">
-              "Practical Differentially Private and Byzantine-resilient Federated Learning." </a>
-              Proceedings of the ACM on Management of Data 1, no. 2 (2023): 1-26.</span>
-          </li>
-          <li><strong><span style="color: #993300;">[PVLDB'23]</span></strong> <span style="color: #000000;">
-              Zitao Li, Tianhao Wang, and Ninghui Li. <a href="https://arxiv.org/abs/2208.01700">
-                 "Differentially Private Vertical Federated Clustering." </a>
-              Proceedings of the VLDB Endowment 16, no. 6 (2023): 1277-1290.</span>
-          </li>
-          <li><strong><span style="color: #993300;">[CCS'23]</span></strong> <span style="color: #000000;">
-              Minxin Du, Xiang Yue, Sherman Chow, Tianhao Wang, Chenyu Huang, and Huan Sun. <a href="https://arxiv.org/abs/2309.06746"> 
-                "DP-Forward: Fine-tuning and Inference on Language Models with Differential Privacy in Forward Pass."</a> 
-                In Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security. 2023.</span>
-          </li>
-          
-          <li><strong><span style="color: #993300;">[CCS'22]</span></strong> <span style="color: #000000;">
-            Samuel Maddock, Graham Cormode, Tianhao Wang, Carsten Maple, and Somesh Jha. <a href="https://dl.acm.org/doi/abs/10.1145/3548606.3560687">
-            "Federated boosted decision trees with differential privacy." </a>
-            In Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security, pp. 2249-2263. 2022.</span>
-        </li>
-
+              <li><strong><span style="color: #993300;">[TBD]</span></strong> <span style="color: #000000;">
+               TBD</span>
+            </li>
           </div>
         </div>
         <!--End Publications-->
@@ -197,10 +113,7 @@ Internet measurement research has been providing critical insights and evidence 
           <div class="flex-item flex-column">
             <h2 class="add-top-margin">Software and Datasets</h2>
             <hr>
-            <li>Code and dataset for <a href="https://github.com/uci-dsp-lab/ENTENTE">[NDSS'26]</a></li>
-            <li>Code and dataset for <a href="https://github.com/DanyuSun/NetDPSyn">[IMC'24]</a></li>
-            <li>Code and dataset for <a href="https://github.com/dpra-dp/dpra">[ACSAC'23a]</a></li>
-            <li>Code and dataset for <a href="https://github.com/BennyTMT/weighted-smoothing">[ACSAC'23b]</a></li>
+            <li>TBD</li>
           </div>
         </div>
         <!--End Software-->
@@ -210,9 +123,7 @@ Internet measurement research has been providing critical insights and evidence 
           <div class="flex-item flex-column">
             <h2 class="add-top-margin">Outreach</h2>
             <hr>
-            <li>Content about differential privacy was integrated into the curriculum of UCI and uVa courses about security and privacy.</li>
-            <li>NetDPSyn code donated to the Privacy Enhancing Technologies (PET) Initiative at <a href="https://github.com/privacy-enhancing-technologies/NetDPSyn">this repo.</a></li>
-            <li>A <a href="https://www.privsyn.com/">website</a> was developed for PrivSyn to ease users' access.</li></div>
+            <li>TBD</li></div>
         </div>
         <!--End Datasets-->
         <!-------------------------------------------------------------------------------------------->			
