@@ -1,135 +1,142 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <title>MPC-GIDS</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    .menu-index {
-      color: rgb(255, 255, 255) !important;
-      opacity: 1 !important;
-      font-weight: 700 !important;
+    body {
+      font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 30px;
+      background-color: #fff;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 5px;
+      color: #222;
+    }
+
+    h1 .track {
+      font-size: 16px;
+      font-weight: normal;
+      color: #555;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 5px;
+      color: #222;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 15px;
+    }
+
+    ul {
+      margin: 10px 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #005cbf;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .project-img {
+      float: left;
+      max-width: 130px;
+      margin: 5px 25px 15px 0;
+    }
+
+    .summary-points {
+      list-style-type: disc;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+
+      .project-img {
+        float: none;
+        display: block;
+        max-width: 160px;
+        margin: 10px auto;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="menu-container"></div>
-  <div class="content-container">
-    <div class="content">
-      <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Project Summary-->
-        <div class="flex-row">
-		  <div class="flex-item flex-column">
-            <h2 class="add-top-margin">PDaSP Track 1: Practical Secure Multiparty Computations for Graph-based Intrusion Detection Systems</h2>
-            <hr>
-			<h3>Summary</h3>
-            <p class="text">
-			<img class="image image-wrap-text max-width-140" src="img/mpc-gids.png">
-Cyberattacks on computer networks pose growing threats to critical infrastructure, businesses, and personal data across the United States. Computer security systems that monitor network traffic to detect suspicious activity are essential for protecting against these attacks, but they face a significant challenge: detecting sophisticated attacks often requires analyzing data from multiple organizations, devices, or locations simultaneously. However, sharing network data raises serious privacy concerns because this information can reveal sensitive details about individuals, businesses, and government operations. This project addresses this challenge by developing advanced privacy protection methods that allow organizations to work together to detect cyberattacks without exposing sensitive information. This work serves the national interest by strengthening cybersecurity defenses across critical infrastructure, supporting economic competitiveness through improved data protection, advancing national security through enhanced threat detection capabilities, and enabling compliance with privacy regulations while maintaining robust cyber defenses.  </br></br>
+  <h1>PDaSP Track 1: Practical Secure Multiparty Computations for Graph-based Intrusion Detection Systems
+  </h1>
 
-This project develops privacy-preserving techniques for graph-based intrusion detection systems that model network traffic and device relationships as interconnected graphs. The research activities include developing specialized cryptographic protocols for essential operations such as sparse matrix multiplications that are fundamental to graph-based analysis. The project will utilize different data partitioning strategies and computational models to perform most operations locally on unencrypted data, minimizing the computational overhead of cryptographic protocols. The team will implement selective revelation of intermediate computational results under differential privacy protection to improve system efficiency while maintaining privacy guarantees. The research extends these protocols to protect the complete training process of graph convolutional neural networks used in intrusion detection, providing comprehensive privacy protection with enhanced computational efficiency. Additionally, the project will support privacy-preserving data provenance in graph-traversal-based detection systems by modeling graph traversal algorithms as matrix operations implemented through the specialized cryptographic protocols. The team will validate these approaches using real-world network datasets and evaluate their effectiveness in collaborative intrusion detection scenarios while measuring privacy preservation and computational performance across diverse network environments.
- </br>
+  <h2>Summary</h2>
+  <div class="clearfix">
+    <img class="project-img" src="img/mpc-gids.png" alt="MPC-GIDS project logo">
+          Cyber-attacks on computer networks pose growing threats to critical infrastructure, businesses, and personal data across the United States. Detecting sophisticated attacks requires analyzing data from multiple organizations simultaneously — but sharing network data can expose sensitive details about individuals, businesses, and government operations. This project will develop privacy-preserving techniques for graph-based intrusion detection systems (GIDS) that enable organizations to collaborate on threat detection without compromising privacy. The main thrusts of this project include:
+    <ul class="summary-points">
 
-
-            </p>
-          </div>
-        </div>
-        <!--End Project Summary-->
-        <!-------------------------------------------------------------------------------------------->		
-		<!--Start Support-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Support</h2>
-            <hr>
-			<ul>
-              <li>NSF 2453148 and 2453149. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2453148&HistoricalAwards=false"> UCI Part.</a><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2453149&HistoricalAwards=false"> UIUC Part.</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--End Support-->
-        <!-------------------------------------------------------------------------------------------->				
-        <!--Start People-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">People</h2>
-            <hr>            
-            <ul>
-              <li>Zhou Li. PI on this project (UCI EECS). </li>
-              <li>Yupeng Zhang. PI on this project (UIUC ECE).</li>
-              <li>Yu Zheng. PostDoc Scholar (UCI EECS). </li>
-                      <li>Chenang Li. Ph.D. Student Researcher (UCI EECS). </li>
-            </ul>
-          </div>
-        </div>
-        <!--End People-->
-        <!-------------------------------------------------------------------------------------------->					
-		<!--Project Timeline-->
-		<!--
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Project Timeline</h2>
-            <hr>
-			<div class="custom-table-container center add-top-margin-small">
-              <table class="custom-table">
-                <thead>
-                  <tr class="bg-color-gray">
-                    <th class="text-center">Task</th>
-                    <th class="text-center">Projected Year</th>
-                    <th class="text-center">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>-->
-        <!--End Project Timeline-->
-        <!-------------------------------------------------------------------------------------------->					
-		<!--Start Publications-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Publications</h2>
-            <hr>
-              <li><strong><span style="color: #993300;">[TBD]</span></strong> <span style="color: #000000;">
-               TBD</span>
-            </li>
-          </div>
-        </div>
-        <!--End Publications-->
-        <!-------------------------------------------------------------------------------------------->	
-		<!--Start Software-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Software and Datasets</h2>
-            <hr>
-            <li>TBD</li>
-          </div>
-        </div>
-        <!--End Software-->
-        <!-------------------------------------------------------------------------------------------->		
-		<!--Start Datasets-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin">Outreach</h2>
-            <hr>
-            <li>TBD</li></div>
-        </div>
-        <!--End Datasets-->
-        <!-------------------------------------------------------------------------------------------->			
-      </div>
-    </div>
+      <li><strong>Cryptographic protocols:</strong> We will design specialized secure multiparty computation protocols for sparse matrix multiplications fundamental to graph-based analysis, utilizing different data partitioning strategies to minimize cryptographic overhead.</li>
+      <li><strong>Differential privacy:</strong> We will integrate  differential privacy protection to improve efficiency while maintaining privacy guarantees.</li>
+      <li><strong>GNN training:</strong> We will  extend these protocols to protect the complete training process of graph convolutional neural networks used in intrusion detection.</li>
+      <li><strong>Data provenance:</strong> We will  support privacy-preserving data provenance in graph-traversal-based detection systems.</li>
+      <li><strong>End-to-end frontend:</strong> We will provide a PyTorch-based frontend that allows users to specify GNN models in familiar high-level APIs, which are automatically compiled into our secure computation backend.</li>
+      <li><strong>Evaluation:</strong> We will evaluate the developed approaches using real-world network datasets and evaluate effectiveness in collaborative intrusion detection scenarios.</li>
+    </ul>
   </div>
+
+  <h2>Support</h2>
+  <ul>
+    <li>NSF 2453148 and 2453149. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2453148&HistoricalAwards=false">UCI Part.</a> <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2453149&HistoricalAwards=false">UIUC Part.</a></li>
+  </ul>
+
+  <h2>People</h2>
+  <ul>
+    <li><strong><a href="https://faculty.sites.uci.edu/zhouli/">Zhou Li.</a></strong> PI on this project (UCI EECS).</li>
+    <li><strong><a href="https://zhangyp.web.illinois.edu/">Yupeng Zhang.</a></strong> PI on this project (UIUC ECE).</li>
+    <li><strong><a href="https://lcatarjam.github.io/">Chenang Li.</a></strong> Ph.D. Student Researcher (UCI EECS).</li>
+    <li><strong><a href="https://liutianyi.site/">Tianyi Liu.</a></strong> Ph.D. Student Researcher (UIUC ECE).</li>
+    <li><strong><a href="https://yuzhengcuhk.github.io/">Yu Zheng.</a></strong> External Collaborator (UC Berkeley).</li>
+  </ul>
+
+  <h2>Publications</h2>
+  <ul>
+    <li>Yu Zheng, Chenang Li, Zhou Li and Qingsong Wang. <strong><a href="https://www.ndss-symposium.org/ndss-paper/convergent-privacy-framework-for-multi-layer-gnns-through-contractive-message-passing/"> Convergent Privacy Framework for Multi-layer GNNs through Contractive Message Passing.</a></strong> Annual Network and Distributed System Security Symposium (NDSS), February, 2026.</li>
+  </ul>
+
+  <h2>Software and Datasets</h2>
+  <ul>
+    <li><a href="https://github.com/yuzhengcuhk/caribou-public">caribou-public</a> — Code for "Convergent Privacy Framework for Multi-layer GNNs through Contractive Message Passing."</li>
+  </ul>
+
+  <h2>Outreach Activities</h2>
+  <ul>
+    <li>To be updated</li>
+  </ul>
 </body>
 
 </html>
